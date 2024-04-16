@@ -5,7 +5,7 @@ function Cli() {
     const [homework, setHomework] = useState(data[0]);
     const abc = 'abcdefghiklmnopqrstuvwrsyz'
   return (
-    <div className="h-full w-full bg-slate-500 flex flex-col md:flex-row">
+    <div className="h-full w-full flex flex-col md:flex-row">
       <aside className="w-full h-auto bg-white p-5 md:w-96 flex justify-center">
         <div className="join join-vertical ">
           {data.map((item) => (
@@ -13,8 +13,8 @@ function Cli() {
           ))}
         </div>
       </aside>
-      <main className="p-4 w-full ">
-        <h2 className="text-2xl text-center my-6">
+      <main className="p-4 w-full bg-base-300">
+        <h2 className="text-2xl text-center my-6 font-bold">
           Assignment: {homework.name}
         </h2>
         <h3 className=" text-center">
@@ -42,6 +42,9 @@ function Cli() {
             <div className="divider"></div>
           </div>
         ))}
+        <h2 className="text-2xl text-center my-6 font-bold">
+          End of {homework.name} Assignment
+        </h2>
       </main>
     </div>
   );

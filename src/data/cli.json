@@ -5,7 +5,7 @@
     "sections": [
       {
         "section": "Understanding Your Location",
-        "questoin": [
+        "questoins": [
           "Open your terminal or command prompt in Desktop.",
           "Use a command to display your current working directory"
         ],
@@ -13,7 +13,7 @@
       },
       {
         "section": "Creating Directories",
-        "questoin": [
+        "questoins": [
           "Create a new directory named CLI_Task.",
           "Inside CLI_Task, create two more directories: MyDocs and Projects."
         ],
@@ -21,7 +21,7 @@
       },
       {
         "section": "Navigating and Listing Contents",
-        "questoin": [
+        "questoins": [
           "Navigate into CLI_Task.",
           "List all the files and directories inside CLI_Task.",
           "Now, navigate into MyDocs without leaving the current directory or typing the full path."
@@ -30,7 +30,7 @@
       },
       {
         "section": "Creating and Manipulating Files",
-        "questoin": [
+        "questoins": [
           "While still inside MyDocs, create an empty file named my_notes.txt.",
           "Add the line \"This is my first note.\" to my_notes.txt.",
           "Display the contents of my_notes.txt to confirm the addition.",
@@ -40,7 +40,7 @@
       },
       {
         "section": "Moving and Deleting",
-        "questoin": [
+        "questoins": [
           "Move my_notes.txt from MyDocs to Projects.",
           "Verify the move by listing the contents of both directories.",
           "Navigate to Projects and remove my_notes.txt.",
@@ -49,64 +49,7 @@
       },
       {
         "section": "Challenges (Optional)",
-        "questoin": [
-          "Without navigating out of the Projects directory, create a file inside MyDocs named challenge.txt and add the line \"I completed the challenge!\".",
-          "List the contents of MyDocs from within the Projects directory without navigating to MyDocs."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Matering Basic Commands",
-    "objective": "Understand and apply basic command-line commands to perform everyday tasks.",
-    "sections": [
-      {
-        "section": "Understanding Your Location",
-        "questoin": [
-          "Open your terminal or command prompt in Desktop.",
-          "Use a command to display your current working directory"
-        ],
-        "hint": "The command starts with p."
-      },
-      {
-        "section": "Creating Directories",
-        "questoin": [
-          "Create a new directory named CLI_Task.",
-          "Inside CLI_Task, create two more directories: MyDocs and Projects."
-        ],
-        "hint": "Use a command that begins with mk."
-      },
-      {
-        "section": "Navigating and Listing Contents",
-        "questoin": [
-          "Navigate into CLI_Task.",
-          "List all the files and directories inside CLI_Task.",
-          "Now, navigate into MyDocs without leaving the current directory or typing the full path."
-        ],
-        "hint": "Remember the change directory command."
-      },
-      {
-        "section": "Creating and Manipulating Files",
-        "questoin": [
-          "While still inside MyDocs, create an empty file named my_notes.txt.",
-          "Add the line \"This is my first note.\" to my_notes.txt.",
-          "Display the contents of my_notes.txt to confirm the addition.",
-          "Now, append another line to my_notes.txt: \"CLI commands are powerful.\"",
-          "Display the contents of my_notes.txt again to confirm the appended content."
-        ]
-      },
-      {
-        "section": "Moving and Deleting",
-        "questoin": [
-          "Move my_notes.txt from MyDocs to Projects.",
-          "Verify the move by listing the contents of both directories.",
-          "Navigate to Projects and remove my_notes.txt.",
-          "Confirm the removal by trying to list or display the contents of my_notes.txt."
-        ]
-      },
-      {
-        "section": "Challenges (Optional)",
-        "questoin": [
+        "questoins": [
           "Without navigating out of the Projects directory, create a file inside MyDocs named challenge.txt and add the line \"I completed the challenge!\".",
           "List the contents of MyDocs from within the Projects directory without navigating to MyDocs."
         ]

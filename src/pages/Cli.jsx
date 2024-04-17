@@ -2,15 +2,27 @@ import React, { useState } from "react";
 import data from "../data/cli.json";
 
 function Cli() {
-    const [homework, setHomework] = useState(data[1]);
+  const [homework, setHomework] = useState(data[1]);
+  const [coin, setCoin] = useState("Flip the coin")
+  const flipCoin = () => {
+    const rand = Math.round(Math.random())
+    if (rand == 1) {
+      setCoin("Head")
+    } else {setCoin("Tail")}
+
+  }
     const abc = 'abcdefghiklmnopqrstuvwrsyz'
   return (
     <div className="h-full w-full flex flex-col md:flex-row">
-      <aside className="w-full h-auto bg-white p-5 md:w-96 flex justify-center">
+      <aside className="w-full h-auto bg-white p-5 md:w-96 flex flex-col items-center">
         <div className="join join-vertical ">
           {data.map((item, key) => (
             <button key={key} className="btn join-item" onClick={() => setHomework(data[key])}>{item.name}</button>
           ))}
+        </div>
+        <div className="mt-10">
+          <button onClick={flipCoin} className="btn btn-primary">{coin}</button>
+
         </div>
       </aside>
       <main className="p-4 w-full bg-base-300">

@@ -73,14 +73,14 @@
         "section": "Structure The Game Enviroment",
         "questoins": [
           "Create file in each location to represent the event in that location \n -    Shark.txt in Sea \n -    Lion.txt in Forest \n -    Knight.txt in Castle \n -    Princess.txt in Castle",
-          "Add description to each event, to give the user a clue or information about the enviroment \n -    In Shark: You win 100hp or lose 40hp\n -    In Lion:  You win 90hp or lose 30hp \n -    In Knight:  You win 120hp or lose 20hp \n -    In Princess:  Thanks <3"
+          "Add description to each event, to give the user a clue or information about the enviroment \n -    In Shark: You win 100hp or lose 40hp\n -    In Lion:  You win 90hp or lose 30hp \n -    In Knight:  You win 200hp or lose 65hp \n -    In Princess:  Thanks <3"
         ]
       },
       {
         "section": "Gameplay Mecanics",
         "questoins": [
           "Create player.txt in the game world with 100hp as a strat, make sure to add the hp inside player document",
-          "The player needs to cross all location in order to reach to the princess and save her\n -    Move the player to Sea\n -    list the events in Sea and fight them by flipping a coin 'heads = wins, tail = lose'\n -    After filipping the coin, read the event description to update the hero hp",
+          "The player needs to cross all location in order to reach to the princess and save her\n -    Move the player to Sea location\n -    list the events in Sea and fight them by flipping a coin 'heads = wins, tail = lose'\n -    After filipping the coin, read the event description to update the player hp, if the player's hp is less than zero, delete the player file and start new game",
           "Repeat the steps above in Forest with Lion, and in Castl with Knight",
           "Read the Princess message and delete the player document"
         ]

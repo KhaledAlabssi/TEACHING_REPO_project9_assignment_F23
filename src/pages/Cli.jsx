@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import data from "../data/cli.json";
 
 function Cli() {
-    const [homework, setHomework] = useState(data[0]);
+    const [homework, setHomework] = useState(data[1]);
     const abc = 'abcdefghiklmnopqrstuvwrsyz'
   return (
     <div className="h-full w-full flex flex-col md:flex-row">
       <aside className="w-full h-auto bg-white p-5 md:w-96 flex justify-center">
         <div className="join join-vertical ">
-          {data.map((item) => (
-            <button className="btn join-item">{item.name}</button>
+          {data.map((item, key) => (
+            <button key={key} className="btn join-item" onClick={() => setHomework(data[key])}>{item.name}</button>
           ))}
         </div>
       </aside>
       <main className="p-4 w-full bg-base-300">
         <h2 className="text-2xl text-center my-6 font-bold">
-          Assignment: {homework.name}
+          {homework.type}: {homework.name}
         </h2>
         <h3 className=" text-center">
           <span className="font-bold">Objective:</span>{" "}
@@ -27,9 +27,9 @@ function Cli() {
               {sectionKey + 1}. {section.section}
             </h3>
             {section.questoins.map((question, key) => (
-              <div className="ml-12 my-2">
+              <p className="ml-12 my-2 customLineBreak">
                 {abc[key]}: {question}
-              </div>
+              </p>
             ))}
             {section.hint && (
               <details className="dropdown">

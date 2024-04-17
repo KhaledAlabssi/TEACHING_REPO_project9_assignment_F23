@@ -1,0 +1,7 @@
+.customWhiteSpace {
+    color: red;
+
+}
+.customLineBreak {
+    white-space: pre-wrap;
+}

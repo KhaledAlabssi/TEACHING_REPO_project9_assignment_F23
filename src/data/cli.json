@@ -1,6 +1,7 @@
 [
   {
     "name": "Matering Basic Commands",
+    "type": "Assignment",
     "objective": "Understand and apply basic command-line commands to perform everyday tasks.",
     "sections": [
       {
@@ -52,6 +53,43 @@
         "questoins": [
           "Without navigating out of the Projects directory, create a file inside MyDocs named challenge.txt and add the line \"I completed the challenge!\".",
           "List the contents of MyDocs from within the Projects directory without navigating to MyDocs."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Save The Princess",
+    "type": "Game",
+    "objective": "Understand and apply basic command-line commands to perform everyday tasks.",
+    "sections": [
+      {
+        "section": "Setup The Game World",
+        "questoins": [
+          "Open your terminal in Desktop, and create a main directory to represent the game world 'SaveThe Princess', then navigate into it",
+          "Create 3 subdirectories to represent the lcoations in the game 'Sea, Forest, Castle'"
+        ]
+      },
+      {
+        "section": "Structure The Game Enviroment",
+        "questoins": [
+          "Create file in each location to represent the event in that location \n -    Shark.txt in Sea \n -    Lion.txt in Forest \n -    Knight.txt in Castle \n -    Princess.txt in Castle",
+          "Add description to each event, to give the user a clue or information about the enviroment \n -    In Shark: You win 100hp or lose 40hp\n -    In Lion:  You win 90hp or lose 30hp \n -    In Knight:  You win 120hp or lose 20hp \n -    In Princess:  Thanks <3"
+        ]
+      },
+      {
+        "section": "Gameplay Mecanics",
+        "questoins": [
+          "Create player.txt in the game world with 100hp as a strat, make sure to add the hp inside player document",
+          "The player needs to cross all location in order to reach to the princess and save her\n -    Move the player to Sea\n -    list the events in Sea and fight them by flipping a coin 'heads = wins, tail = lose'\n -    After filipping the coin, read the event description to update the hero hp",
+          "Repeat the steps above in Forest with Lion, and in Castl with Knight",
+          "Read the Princess message and delete the player document"
+        ]
+      },
+      {
+        "section": "Secret Message",
+        "questoins": [
+          "We are going to implement the same game as a web-application later in the course with help of\n -HTML \n -CSS \n -JavaScript",
+          "Stay around and enjoy the Journey :)"
         ]
       }
     ]

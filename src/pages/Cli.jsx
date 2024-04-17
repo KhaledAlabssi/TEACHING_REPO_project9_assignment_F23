@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import data from "../data/cli.json";
 
 function Cli() {
-  const [homework, setHomework] = useState(data[1]);
+  const [homework, setHomework] = useState(data[0]);
   const [coin, setCoin] = useState("Flip the coin")
   const flipCoin = () => {
     const rand = Math.round(Math.random())

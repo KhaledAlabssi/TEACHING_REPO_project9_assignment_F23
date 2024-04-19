@@ -16,8 +16,7 @@ function App() {
       <div className="h-full overscroll-y-auto">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cli/:id?" element={<Homework topic={"cli"} />} />
-          <Route path="/html/:id?" element={<Homework topic={"html"} />} />
+          <Route path="/:topic/:id?" element={<Homework />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>

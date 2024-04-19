@@ -3,7 +3,8 @@ import html from "../data/html.json";
 import cli from '../data/cli.json'
 import { Link, useParams } from "react-router-dom";
 
-function Homework({ topic }) {
+function Homework() {
+    const {topic} = useParams()
     let data;
     switch (topic) {
         case "cli":

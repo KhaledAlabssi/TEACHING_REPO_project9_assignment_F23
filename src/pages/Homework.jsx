@@ -1,15 +1,30 @@
 import React, { useState } from "react";
-import data from "../data/html.json";
+import html from "../data/html.json";
+import cli from '../data/cli.json'
 import { Link, useParams } from "react-router-dom";
 
-function Homework({topic}) {
+function Homework({ topic }) {
+    let data;
+    switch (topic) {
+        case "cli":
+            data = cli
+            break;
+        case "html":
+            data = html
+            break;
+        default:
+            data = false
+            break;
+            
+
+    }
     const { id } = useParams();
     const homework = data[Number(id)];
     const [coin, setCoin] = useState("Flip the coin");
 
     const flipCoin = () => {
       const rand = Math.round(Math.random());
-      if (rand == 1) {
+      if (rand === 1) {
         setCoin("Head");
       } else {
         setCoin("Tail");

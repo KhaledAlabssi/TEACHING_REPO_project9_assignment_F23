@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import data from "../data/cli.json";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
-import ErrorPage from "./ErrorPage";
+import { Link, useParams } from "react-router-dom";
 
 function Cli() {
   const { id } = useParams();
-  useParams({ hi: 4 });
   const homework = data[Number(id)];
   const [coin, setCoin] = useState("Flip the coin");
 

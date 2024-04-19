@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import data from "../data/cli.json";
+import { useParams } from "react-router-dom";
 
 function Cli() {
-  const [homework, setHomework] = useState(data[0]);
+  const { id } = useParams()
+  const [homework, setHomework] = useState(id? data[Number(id)] : data[0]);
   const [coin, setCoin] = useState("Flip the coin")
+
   const flipCoin = () => {
     const rand = Math.round(Math.random())
     if (rand == 1) {

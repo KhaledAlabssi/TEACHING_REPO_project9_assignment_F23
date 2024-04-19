@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cli" element={<Cli />} />
+          <Route path="/cli/:id" element={<Cli />} />
         </Routes>
       </div>
 

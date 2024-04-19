@@ -17,8 +17,7 @@ function App() {
       <div className="h-full overscroll-y-auto">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cli" element={<Cli />} />
-          <Route path="/cli/:id" element={<Cli />} />
+          <Route path="/cli/:id?" element={<Cli />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </div>

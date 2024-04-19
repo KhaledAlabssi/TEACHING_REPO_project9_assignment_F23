@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import data from "../data/cli.json";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import ErrorPage from "./ErrorPage";
 
 function Cli() {
   const { id } = useParams();
   useParams({ hi: 4 });
-  console.log(id);
-  const navigate = useNavigate();
   const homework = data[Number(id)];
   const [coin, setCoin] = useState("Flip the coin");
 
@@ -82,7 +80,7 @@ function Cli() {
       ) : (
         <div className="h-screen">
           <p className="alert alert-warning">
-            Please choose and assignment to start
+            Please choose a valid assignment to start
           </p>
         </div>
       )}

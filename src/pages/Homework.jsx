@@ -39,7 +39,7 @@ function Homework() {
         <div className="join join-vertical ">
           {data &&
             data.map((item, key) => (
-              <Link className="btn join-item" key={key} to={`/cli/${key}`}>
+              <Link className="btn join-item" key={key} to={`/${topic}/${key}`}>
                 {item.name}
               </Link>
             ))}

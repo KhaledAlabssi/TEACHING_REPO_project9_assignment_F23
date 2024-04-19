@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Cli from './pages/Cli';
 import Home from './pages/Home';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cli" element={<Cli />} />
           <Route path="/cli/:id" element={<Cli />} />
+          <Route path='*' element={<ErrorPage />} />
         </Routes>
       </div>
 

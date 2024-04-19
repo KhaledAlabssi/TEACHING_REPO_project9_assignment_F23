@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Creating a Personal Website (Headings & P)",
+    "type": "Assignment",
+    "objective": "Design a personal website using only headings and paragraphs to introduce yourself, your interests, and your experiences. This assignment aims to help you practice structuring content with basic HTML elements.",
+    "sections": [
+      {
+        "section": "Introduction",
+        "questoins": [
+          "Create project directory and call it \"MyWebsite\" and open it with VSCode",
+          "Create a new HTML file named \"index.html\"",
+          "Begin with the standard HTML document structure.",
+          "Use an h1 heading for the title of your website, such as \"Welcome to My World\""
+        ]
+      },
+      {
+        "section": "About Me",
+        "questoins": [
+          "Use an h2 heading titled \"About Me\"",
+          "Write a paragraph (p) introducing yourself, including your name, background, and interests."
+        ]
+      },
+      {
+        "section": "Education",
+        "questoins": [
+          "Use an h2 heading titled \"Education\"",
+          "Write a paragraph detailing your educational background, including your current school or alma mater."
+        ]
+      },
+      {
+        "section": "Work Experience",
+        "questoins": [
+          "Use an h2 heading titled \"Work Experience\"",
+          "Write a paragraph summarizing your work experience, including any relevant internships or part-time jobs."
+        ]
+      },
+      {
+        "section": "Skills",
+        "questoins": [
+          "Use an h2 heading titled \"Skills\".",
+          "Write a paragraph listing your skills or areas of expertise, such as programming languages, software, or hobbies."
+        ]
+      },
+      {
+        "section": "Interests",
+        "questoins": [
+          "Use an h2 heading titled \"Interests\".",
+          "Write a paragraph describing your interests outside of work or school, such as sports, music, or travel."
+        ]
+      },
+      {
+        "section": "Future Goals",
+        "questoins": [
+          "Use an h2 heading titled \"Future Goals\".",
+          "Write a paragraph outlining your aspirations and future plans, whether it's related to your career or personal development."
+        ]
+      }
+    ]
+  }
+]
